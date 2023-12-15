@@ -19,7 +19,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: rgba(245, 248, 250, 1);
+  background-color: hsl(204, 33%, 97%);
 }
 /*
   5. Improve media defaults
@@ -45,6 +45,15 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+input::placeholder {
+color: 	hsl(213, 10%, 44%);
+font-family: Lato;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 hr {
@@ -91,18 +100,32 @@ hr {
     color: rgba(29, 44, 60, 1);
   }
 
-  button {
+  .button-item {
    border: 2px solid rgba(100, 110, 122, 1);
    border-radius: 7px;
-   color: rgba(29, 44, 60, 1);
-   width: 91px;
-   height: 40px;
+   padding-block-start: 11px;
+   padding-block-end: 12px;
+   padding-inline-start: 19px;
+   padding-inline-end: 20px;
+   line-height: normal;
   }
 }
 
 
-.button-item {
-  align-self: flex-start;
+a:hover, .agency-plan a:hover, .footer a:hover {
+  color: blueviolet;
+}
+
+a:active, .footer a:active {
+  text-decoration: underline;
+}
+
+.button-item:hover {
+  background-color: hsla(0, 16%, 90%, 0.829);
+}
+
+.agency-plan a:active {
+  text-decoration-color: black;
 }
 
 .nav-rule {
@@ -359,18 +382,7 @@ label {
   display: flex;
   align-items: center;
 
-  > span {
-    display: inline-block;
-    border: 2px solid rgba(255, 255, 255, 1);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    font-size: 0.5rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    line-height: 16px;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
+  > img {
     margin-inline-end: 11px;
   }
 }
@@ -436,6 +448,10 @@ blockquote {
     font-weight: 700;
     font-size: 1rem;
     line-height: 19.2px;
+  }
+
+  img {
+    border-radius: 50%;
   }
 }
 
