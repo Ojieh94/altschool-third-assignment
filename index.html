@@ -74,12 +74,27 @@
 						Your Payment Information
 					</p>
 					<div class="card-info">
-						<label for="cardNumber">Credit Card</label>
+						<label for="card-number">Credit card</label>
 						<input
+							placeholder="Card Number"
+							pattern="[0-9]*"
 							type="text"
-							id="cardNumber"
-							name="cardNumber"
-							placeholder="Card Number           MM/YY     CVC"
+							class="card-number"
+							id="card-number"
+						/>
+						<input
+							placeholder="MM/YY"
+							pattern="[0-9]*"
+							type="text"
+							class="card-expiration"
+							id="card-expiration"
+						/>
+						<input
+							placeholder="CVC"
+							pattern="[0-9]*"
+							type="text"
+							class="card-cvv"
+							id="card-cvv"
 						/>
 					</div>
 					<hr />
@@ -101,22 +116,33 @@
 				<h2>Freelancer</h2>
 				<p class="price"><sup>$</sup>99 <span>/ year</span></p>
 				<p class="renewal">Automatically renews after 1 year</p>
-				<div class="checked"><img src="assets/images/Combined Shape (1).png" alt="checked">Use on <span>5</span> client sites</div>
-				<div class="checked"><img src="assets/images/Combined Shape (1).png" alt="checked">Private repositories</div>
-				<div class="checked"><img src="assets/images/Combined Shape (1).png" alt="checked">Email support</div>
+				<div class="checked">
+					<img src="assets/images/Combined Shape (1).png" alt="checked" />Use on
+					<span>5</span> client sites
+				</div>
+				<div class="checked">
+					<img
+						src="assets/images/Combined Shape (1).png"
+						alt="checked"
+					/>Private repositories
+				</div>
+				<div class="checked">
+					<img src="assets/images/Combined Shape (1).png" alt="checked" />Email
+					support
+				</div>
 				<p class="agency-plan">
 					Need <strong>20</strong> client sites?
 					<a href="">Switch to the <em>Agency</em> plan<span>.</span></a>
 				</p>
-				<hr class="last-hr"/>
+				<hr class="last-hr" />
 				<blockquote>
 					<p>
 						FTP is horrible to deal with. <strong>WP Pusher</strong> solves that
 						issue, and the customer support is awesome!
 					</p>
 					<footer>
-						<img src="assets/images/Bitmap.png" alt="image of Kirk Beard" /> <cite>Kirk
-						Beard</cite>
+						<img src="assets/images/Bitmap.png" alt="image of Kirk Beard" />
+						<cite>Kirk Beard</cite>
 					</footer>
 				</blockquote>
 			</div>
